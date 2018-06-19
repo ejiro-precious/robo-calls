@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/robo-callback.iml" filepath="$PROJECT_DIR$/.idea/modules/robo-callback.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/robo-callback-build.iml" filepath="$PROJECT_DIR$/.idea/modules/robo-callback-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/robo-calls.iml" filepath="$PROJECT_DIR$/.idea/modules/robo-calls.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/robo-calls-build.iml" filepath="$PROJECT_DIR$/.idea/modules/robo-calls-build.iml" />
     </modules>
   </component>
 </project>
