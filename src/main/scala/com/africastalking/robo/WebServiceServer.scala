@@ -4,14 +4,16 @@ package robo
 import java.util.concurrent.TimeoutException
 
 import scala.concurrent.duration._
-import scala.concurrent.{ExecutionContext, Future}
-import akka.actor.SupervisorStrategy.{Restart, Stop}
+import scala.concurrent.{ ExecutionContext, Future }
+
+import akka.actor.SupervisorStrategy.{ Restart, Stop }
 import akka.actor._
 import akka.http.scaladsl.Http
 import akka.stream.ActorMaterializer
+
 import com.africastalking.robo.free.DBService
 import com.africastalking.robo.persistence.Service
-import com.africastalking.robo.utils.{Configs, DBSetup, HttpClient}
+import com.africastalking.robo.utils.{ Configs, DBSetup, HttpClient }
 
 class WebServiceServer(implicit materializer: ActorMaterializer) extends Actor with ActorLogging with DBSetup {
 

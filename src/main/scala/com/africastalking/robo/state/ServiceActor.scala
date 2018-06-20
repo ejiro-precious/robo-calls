@@ -1,9 +1,12 @@
 package com.africastalking.robo
 package state
 
-import scala.concurrent.{ExecutionContext, Future}
-import akka.actor.{Actor, FSM, Terminated}
+import scala.concurrent.{ ExecutionContext, Future }
+
+import akka.actor.{ Actor, FSM, Terminated }
+
 import org.slf4j.LoggerFactory
+
 import com.africastalking.robo.free.DBService
 import com.africastalking.robo.state.ServiceMessage._
 import com.africastalking.robo.persistence.Service

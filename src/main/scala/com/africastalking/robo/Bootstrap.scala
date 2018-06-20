@@ -9,5 +9,4 @@ trait Bootstrap {
     implicit actorSystem: ActorSystem,
     actorMaterializer: ActorMaterializer
   ): ActorRef
-
 }

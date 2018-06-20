@@ -1,16 +1,20 @@
 package com.africastalking
 package robo
 
-import scala.concurrent.{ExecutionContext, Future}
+import scala.concurrent.{ ExecutionContext, Future }
 import scala.language.postfixOps
-import akka.actor.{ActorContext, ActorRef, ActorSystem, Props}
+
+import akka.actor.{ ActorContext, ActorRef, ActorSystem, Props }
 import akka.event.Logging
 import akka.http.scaladsl.model._
-import akka.http.scaladsl.server.Directives.{path, _}
+import akka.http.scaladsl.server.Directives.{ path, _}
 import akka.http.scaladsl.server.Route
 import akka.stream.Materializer
 import akka.http.scaladsl.model.StatusCodes.OK
 import akka.http.scaladsl.server.directives.DebuggingDirectives.logRequestResult
+
+import org.slf4j.LoggerFactory
+
 import com.africastalking.robo.state.ServiceProtocol._
 import com.africastalking.robo.state.ServiceActor
 import com.africastalking.robo.utils.XMLResponses._
@@ -19,7 +23,6 @@ import com.africastalking.robo.api.call.TestCalling
 import com.africastalking.robo.domain.VoiceSessionHops
 import com.africastalking.robo.free.DBService
 import com.africastalking.robo.persistence.Service
-import org.slf4j.LoggerFactory
 
 trait ServiceRoutes extends RoutesDefinition with HttpClient {
 
