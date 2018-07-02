@@ -8,11 +8,11 @@ import slick.driver.JdbcProfile
 
 import cats.Monad
 
-import com.africastalking.robo.free.DbioMonad
+import com.africastalking.robo.free.DbioMonadT
 import com.africastalking.robo.persistence.MysqlDriver.api._
 
 /** This class extends DbioMonad to have an instance of DBIO monad **/
-trait DbioServiceInstances extends DbioMonad {
+trait DbioServiceInstances extends DbioMonadT {
 
   /** This is the main db used for the sql queries **/
   def db: JdbcProfile#Backend#Database

@@ -3,7 +3,7 @@ package utils
 
 object Enum {
 
-  object Environment extends Enumeration {
+  object RoboCallEnvironment extends Enumeration {
     val Development = Value(1)
     val Production  = Value(2)
   }
